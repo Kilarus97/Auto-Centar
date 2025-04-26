@@ -6,7 +6,7 @@
     align-items: center;
     height: 7vh;
     background-color: $color_1;
-    gap: 20px;
+    
     
         ul {
             display: flex;
@@ -15,7 +15,7 @@
 
         img {
             height: 1.5em;
-            width: auto; 
+            width: auto;
         }
 
         li {
@@ -30,5 +30,11 @@
             text-decoration: none;
             color:$color_3;
             padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+
+            &:hover {
+                color: $color_4; 
+                border-radius: 5px; 
+            }
         }
 }

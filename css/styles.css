@@ -4,7 +4,6 @@
   align-items: center;
   height: 7vh;
   background-color: #dde0e9;
-  gap: 20px;
 }
 .navbar ul {
   display: flex;
@@ -25,6 +24,11 @@
   text-decoration: none;
   color: #003153;
   padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navbar a:hover {
+  color: #b96d34;
+  border-radius: 5px;
 }
 
 .sellers {
@@ -57,11 +61,17 @@
 .sellers .locations div {
   font-size: 18px;
   padding: 10px;
+  height: auto;
   text-align: center;
   margin: 5px;
   border: 0px solid rgba(255, 255, 255, 0.7);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
+  transition: border 0.3s ease;
+}
+.sellers .locations div:hover {
+  border: 1px solid #003153;
+  border-radius: 20px;
 }
 .sellers .locations div p span {
   color: #b96d34;
@@ -73,6 +83,7 @@
 }
 .cars form {
   width: 60%;
+  height: auto;
   background-color: #dde0e9;
   border: 1px solid #003153;
   border-radius: 10px;
@@ -99,7 +110,8 @@
 .cars .calculator {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  height: 50vh;
 }
 .cars .calculator div {
   width: 45%;
@@ -134,7 +146,7 @@
   -webkit-appearance: none;
   appearance: none;
   padding: 0;
-  width: 70%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .cars .calculator input[type=range]::-webkit-slider-thumb {
@@ -174,20 +186,17 @@
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 7%;
   background-color: #003153;
-  text-align: center;
-}
-footer a:last-child {
-  text-align: right;
+  align-items: center;
 }
 footer a {
+  padding-left: 50px;
+  margin: 20px;
   text-decoration: none;
   color: #dde0e9;
-  margin-top: 10px;
-  padding: 10px;
 }
 
 html, body {
@@ -197,6 +206,101 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 550;
   color: #003153;
+}
+
+@media (max-width: 992px) {
+  .navbar .nav-links .nav-hide {
+    display: none;
+  }
+  .sellers {
+    flex-wrap: nowrap;
+  }
+  .sellers .locations {
+    justify-content: space-evenly;
+  }
+  .sellers .locations div {
+    max-width: 17%;
+    height: 90%;
+  }
+  .sellers .locations div p {
+    text-align: left;
+  }
+  .cars {
+    flex-direction: column-reverse;
+  }
+  .cars form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .cars .offers {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer a:last-child {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+  }
+  .navbar:hover .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar:hover .nav-hide,
+  .navbar:hover .nav-more {
+    display: block;
+    text-align: center;
+  }
+  .navbar .nav-hide,
+  .navbar .nav-more {
+    display: none;
+  }
+  .sellers {
+    height: auto;
+  }
+  .sellers .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .sellers .locations div {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    height: auto;
+  }
+  .cars form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .cars .offers {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .cars .offers div#central-car, .cars .offers div {
+    margin: 20px;
+    width: 90%;
+    margin-top: 0;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

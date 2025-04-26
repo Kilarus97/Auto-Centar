@@ -32,11 +32,17 @@
         div {
             font-size:$font-size-small;
             padding: $padding-small;
+            height: auto;
             text-align: center;
             margin: 5px;
             border: 0px solid $color_2;
             border-radius: 20px;
             background-color: $color_2;
+            transition: border 0.3s ease;
+            &:hover {
+                border: 1px solid $color_3;
+                border-radius: 20px; 
+            }
 
                 p span {
                     color:$color_4;
