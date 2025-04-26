@@ -1,0 +1,202 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background-color: #dde0e9;
+  gap: 20px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar img {
+  height: 1.5em;
+  width: auto;
+}
+.navbar li {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #003153;
+  padding: 10px 15px;
+}
+
+.sellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  gap: 20px;
+  background-image: url(https://skolovanje.b-cdn.net/osnove%20veb%20programiranja/2.%20HTML%20layout%2C%20SASS/2.3%20Sass/road_without_car.jpeg);
+  background-size: cover;
+}
+.sellers h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-start;
+  padding-left: 50px;
+}
+.sellers .locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.sellers .locations div {
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  border: 0px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.sellers .locations div p span {
+  color: #b96d34;
+}
+
+.cars {
+  display: flex;
+  padding: 40px 20px;
+}
+.cars form {
+  width: 60%;
+  background-color: #dde0e9;
+  border: 1px solid #003153;
+  border-radius: 10px;
+  padding: 20px;
+}
+.cars .dream-car {
+  text-align: center;
+  display: flex;
+}
+.cars .dream-car img {
+  width: 70%;
+}
+.cars .dream-car .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cars .dream-car .description h4 {
+  font-size: 30px;
+}
+.cars .dream-car .description p {
+  font-size: 35px;
+}
+.cars .calculator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cars .calculator div {
+  width: 45%;
+  padding: 10px;
+  margin-top: 15px;
+}
+.cars .calculator label {
+  display: block;
+  margin-bottom: 5px;
+}
+.cars .calculator input, .cars .calculator select {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #003153;
+  border-radius: 20px;
+}
+.cars .calculator .range-wrapper {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.cars .calculator .car-color label:first-child {
+  width: 100%;
+}
+.cars .calculator .car-color label,
+.cars .calculator .car-color input {
+  display: inline-block;
+  width: 40%;
+}
+.cars .calculator input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.cars .calculator input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #dde0e9;
+  border: 2px solid #003153;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cars .offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 10px;
+  width: 40%;
+}
+.cars .offers div {
+  width: 40%;
+  padding: 10px 0;
+  background-color: #dde0e9;
+  border: 1px solid #003153;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cars .offers div img {
+  width: 100%;
+  margin: 0 auto;
+}
+.cars .offers div#central-car {
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 7%;
+  background-color: #003153;
+  text-align: center;
+}
+footer a:last-child {
+  text-align: right;
+}
+footer a {
+  text-decoration: none;
+  color: #dde0e9;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  color: #003153;
+}
+
+/*# sourceMappingURL=styles.css.map */

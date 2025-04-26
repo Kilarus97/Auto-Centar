@@ -1,0 +1,27 @@
+$color_1:#dde0e9;
+$color_2:rgba(255, 255, 255, 0.7);
+$color_3:#003153;
+$color_4:#b96d34;
+
+$font-size-small: 18px;
+$font-size-medium: 32px;
+$font-size-large: 48px;
+
+$padding-small: 10px;
+$padding-medium: 15px;
+$padding-large: 30px;
+$padding-extra-large: 50px;
+
+$border-radius-small: 8px;
+$border-radius-medium: 10px;
+
+$breakpoint-extra-small: 576px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px;
+
+@mixin responsive($max-screen-size) {
+    @media (max-width: $max-screen-size) {
+        @content;
+    }
+}

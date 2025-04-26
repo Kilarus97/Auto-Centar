@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <ul class ="nav-links">
           <li class="nav-hide">
             <a href="">Akcija</a>
           </li>
@@ -35,19 +35,19 @@
       <section class="sellers">
         <h1>Prodajne lokacije</h1>
         <div class="locations">
-          <div>
+          <div class = "card">
             <h2>Auto centar Gavrić</h2>
             <p>Adresa: <span>Gaudijeva 13, Novi Sad</span></p>
           </div>
-          <div>
+          <div class = "card">
             <h2>Auto centar Ivković</h2>
             <p>Adresa: <span>Mihaila Pupina 2, Novi Sad</span></p>
           </div>
-          <div>
+          <div class = "card">
             <h2>Auto centar Klisa</h2>
             <p>Adresa: <span>Ilije Birčanina 23, Novi Sad</span></p>
           </div>
-          <div>
+          <div class = "card">
             <h2>Auto Centar Liman</h2>
             <p>Adresa: <span>Pabla Pikasa 3, Novi Sad</span></p>
           </div>
@@ -62,7 +62,7 @@
               <p>Počevši od 7 899€</p>
             </div>
           </div>
-          <div class="calculator">
+            <div class="calculator">
             <div>
               <label for="model">Model automobila</label>
               <select id="model" name="model">
@@ -86,27 +86,28 @@
             </div>
             <div class="car-color">
               <label for="shiny">Tip boje automobila</label>
-              <label for="shiny">Sjajna boja</label>
-              <input type="radio" name="shiny" value="shiny" checked />
-              <label for="no-shiny">Mat boja</label>
-              <input type="radio" name="shiny" value="no-shiny" />
+                    <label for="shiny">Sjajna boja</label>
+                    <input type="radio" name="shiny" value="shiny" checked />
+                    <label for="no-shiny">Mat boja</label>
+                    <input type="radio" name="shiny" value="no-shiny" />
             </div>
             <div>
               <label for="price">Opseg cene</label>
-              <span>7 899€ </span
-              ><input type="range" name="price" id="price" min="7899" max="43799" /><span>
-                43 799€</span
-              >
+              <div class="range-wrapper">
+                <span>7 899€</span>
+                <input type="range" name="price" id="price" min="7899" max="43799" />
+                <span>43 799€</span>
+            </div>
             </div>
             <div>
               <label for="contact">Kontakt mejl</label>
               <input type="email" name="contact" id="contact" required />
             </div>
             <div>
-              <input type="submit" value="Posalji upit" />
+              <input type="submit" value="Posalji upit" class = "dugmici"/>
             </div>
             <div>
-              <input type="reset" value="Resetuj formu" />
+              <input type="reset" value="Resetuj formu" class = "dugmici"/>
             </div>
           </div>
         </form>
@@ -119,7 +120,7 @@
             <img src="https://i.ibb.co/hFqJfRNr/renault2.png" />
             <p>Već od 27 629€</p>
           </div>
-          <div>
+          <div id = "central-car">
             <img src="https://i.ibb.co/gLwnYZqs/renault3.png" />
             <p>Već od 3 679€</p>
           </div>

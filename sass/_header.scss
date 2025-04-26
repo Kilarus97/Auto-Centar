@@ -1,0 +1,34 @@
+@use 'promenjive' as *;
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: $color_1;
+    gap: 20px;
+    
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        img {
+            height: 1.5em;
+            width: auto; 
+        }
+
+        li {
+            display: inline-block;
+            margin: 5px;
+            padding:10px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color:$color_3;
+            padding: 10px 15px;
+        }
+}
